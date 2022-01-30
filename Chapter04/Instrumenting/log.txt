@@ -1,0 +1,3 @@
+Trace says: Hello World!
+Trace error
+Trace warning

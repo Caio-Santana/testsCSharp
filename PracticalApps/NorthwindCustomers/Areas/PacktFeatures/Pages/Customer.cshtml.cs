@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Packt.Shared;
+
+namespace PacktFeatures.Pages
+{
+    public class CustomerPageModel : PageModel
+    {
+        private Northwind db;
+
+        public Customer Customer { get; set; }
+
+        public CustomerPageModel(Northwind injectedContext)
+        {
+            db = injectedContext;
+        }
+
+        public void OnGet(string id)
+        {
+            Customer = db.Customers.SingleOrDefault(c => c.CustomerID == id);
+        }
+    }
+}

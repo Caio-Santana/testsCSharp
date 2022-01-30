@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Packt.CSdotnet.SharedLibrary</PackageId>
+    <PackageVersion>5.0.0.0</PackageVersion>
+    <Title>C# 9 and .NET 5 Shared Library</Title>
+    <Authors>Mark J Price</Authors>
+    <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
+    <PackageProjectUrl>http://</PackageProjectUrl>
+    <PackageIcon>icone.png</PackageIcon>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Example NuGet</PackageReleaseNotes>
+    <Description>A Description</Description>
+    <Copyright>Copyright c 2021</Copyright>
+    <PackageTags>string extensions</PackageTags>
+  </PropertyGroup>
+
+<ItemGroup>
+  <None Include="icone.png">
+    <Pack>True</Pack>
+    <PackagePath></PackagePath>
+  </None>
+</ItemGroup>
+</Project>
